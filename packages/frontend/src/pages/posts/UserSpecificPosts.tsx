@@ -1,5 +1,5 @@
 import { useLoaderData, useNavigate } from "react-router";
-import { useGetBlogPostByUsernameQuery } from "../../services/posts/blogSlice";
+import { useGetBlogPostsByUsernameQuery } from "../../services/posts/blogSlice";
 import DeletePostButton from "./DeletePostButton";
 
 const UserSpecificPosts = ({
@@ -8,7 +8,7 @@ const UserSpecificPosts = ({
 	const navigate = useNavigate();
 	const query: string | undefined = useLoaderData() as string | undefined;
 
-	const { isLoading, data: posts } = useGetBlogPostByUsernameQuery(
+	const { isLoading, data: posts } = useGetBlogPostsByUsernameQuery(
     	query as string,
 	);
 

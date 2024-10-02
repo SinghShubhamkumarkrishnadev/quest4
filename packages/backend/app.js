@@ -18,6 +18,8 @@ app.use(cookieParser(config.TOKEN));
 const corsOptions = {
 	// Add your address here i.e. your forwarded address from a cloud environment
 	origin: [
+		"https://studious-guide-x6rr6r5px7rhp756-4040.app.github.dev",
+		"https://studious-guide-x6rr6r5px7rhp756-5173.app.github.dev",
 		"http://127.0.0.1:5173",
 		"http://127.0.0.1:4173",
 		"http://localhost:5173",
